@@ -2,7 +2,6 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const form = document.querySelector("form");
 const container = document.querySelector(".container");
-const h1 = document.querySelector(".head");
 const tasks = localStorage.getItem("tasks")? JSON.parse(localStorage.getItem("tasks")): [];
 console.log(tasks);
 showAllTasks();
@@ -52,9 +51,3 @@ form.addEventListener("submit", (e) => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
     showAllTasks();
 });
-if(tasks.length===0){
-    h1.innerText = "no todo is there for today.";
-}
-else{
-    h1.innerText = "See Your Daily Goals Here";
-}
