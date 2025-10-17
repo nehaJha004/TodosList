@@ -17,7 +17,7 @@ body {
 }
 
 h1{
-    font-family: cursive;
+    font-family: sans-serif;
     text-align: center;
     margin: 30px;
     color: #fff;
@@ -57,7 +57,7 @@ button:hover{
 
 .task{
     background-color: rgba(50 , 50, 50);
-    font: 600 1.2rem cursive;
+    font: 600 1.2rem sans-serif;
     padding: 10px 40px;
     color: #fff;
     display: flex;
@@ -123,4 +123,5 @@ button:hover{
         height: 28px;
         font-size: 1.3rem;
     }
+
 }
